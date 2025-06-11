@@ -4,4 +4,4 @@
 pip install -r requirements.txt
 ```
 2. 重启动comfyui项目
-3. 填写你的api_key密钥
+3. 在工作流节点中填写你的api_key密钥
