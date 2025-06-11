@@ -1,2 +1,6 @@
 # ComfyUI-Flux1-Kontext
-直接调用flux官方的kontext pro api和fal的kontext api
+1. cd到ComfyUI-Flux1-Kontext目录下，安装依赖包
+```
+pip install -r requirements.txt
+```
+2. 重启动comfyui项目

@@ -1,0 +1,430 @@
+{
+  "last_node_id": 117,
+  "last_link_id": 8,
+  "nodes": [
+    {
+      "id": 52,
+      "type": "LoadImage",
+      "pos": [
+        3891.094970703125,
+        1665.279052734375
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "图像",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "label": "遮罩",
+          "type": "MASK"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "WX20250610-110321.png",
+        "image"
+      ]
+    },
+    {
+      "id": 117,
+      "type": "SaveImage",
+      "pos": [
+        5431.72607421875,
+        2116.18017578125
+      ],
+      "size": [
+        354.6159362792969,
+        307.728271484375
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "label": "图像",
+          "type": "IMAGE",
+          "link": 5
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "FluxKontextPro",
+      "pos": [
+        4864.39990234375,
+        1609.6317138671875
+      ],
+      "size": [
+        416.30792236328125,
+        367.4423522949219
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "input_image",
+          "label": "input_image",
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "name": "prompt",
+          "label": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "polling_url",
+          "label": "polling_url",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxKontextPro"
+      },
+      "widgets_values": [
+        "Dressed on an 18-year-old long-haired beauty with a height of 1.7 meters, a black-haired and blue-eyed Asian beauty, sound hands and feet, full body photo, natural lighting. a lighthouse on a rocky coast in the background.",
+        "3:4",
+        3,
+        50,
+        1573354398,
+        "randomize",
+        "randomize",
+        false,
+        "",
+        "https://api.us1.bfl.ai/v1/flux-kontext-pro"
+      ]
+    },
+    {
+      "id": 116,
+      "type": "Flux1KontextFal",
+      "pos": [
+        4873.8935546875,
+        2101.680908203125
+      ],
+      "size": [
+        400,
+        342
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "image",
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "prompt",
+          "label": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "label": "images",
+          "type": "IMAGE",
+          "links": [
+            5
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Flux1KontextFal"
+      },
+      "widgets_values": [
+        "",
+        "0e2d534e-c3dc-45ae-b226-58076ee5f81d:b8161bc865c0a242b019c975bd3ddaa1",
+        "",
+        50,
+        3,
+        328953779,
+        "randomize",
+        1,
+        "2",
+        "png",
+        "3:4"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "SaveImage",
+      "pos": [
+        5412.505859375,
+        1616.8291015625
+      ],
+      "size": [
+        354.6159362792969,
+        307.728271484375
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "label": "图像",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "comfyui"
+      ]
+    },
+    {
+      "id": 112,
+      "type": "CR Text",
+      "pos": [
+        4311.4453125,
+        2014.1763916015625
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "label": "文本",
+          "type": "*",
+          "links": [
+            4,
+            8
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "label": "显示帮助",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "A woman with a summer meadow in the background and warm afternoon sun"
+      ]
+    },
+    {
+      "id": 114,
+      "type": "ImageResizeKJ",
+      "pos": [
+        4363.93701171875,
+        1634.228515625
+      ],
+      "size": [
+        315,
+        266
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "label": "图像",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "get_image_size",
+          "label": "参考图像",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        },
+        {
+          "name": "width_input",
+          "label": "宽度",
+          "type": "INT",
+          "shape": 7,
+          "widget": {
+            "name": "width_input"
+          },
+          "link": null
+        },
+        {
+          "name": "height_input",
+          "label": "高度",
+          "type": "INT",
+          "shape": 7,
+          "widget": {
+            "name": "height_input"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "label": "图像",
+          "type": "IMAGE",
+          "links": [
+            3,
+            7
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "width",
+          "label": "宽度",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "label": "高度",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageResizeKJ"
+      },
+      "widgets_values": [
+        0,
+        3200,
+        "lanczos",
+        true,
+        64,
+        0,
+        0,
+        "disabled"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      52,
+      0,
+      114,
+      0,
+      "IMAGE"
+    ],
+    [
+      3,
+      114,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      112,
+      0,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      5,
+      116,
+      0,
+      117,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      1,
+      0,
+      51,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      114,
+      0,
+      116,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      112,
+      0,
+      116,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6588450000000013,
+      "offset": [
+        -3779.3854872651527,
+        -1430.7223782318713
+      ]
+    },
+    "node_versions": {
+      "comfy-core": "0.3.14"
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
