@@ -1,4 +1,4 @@
-# ComfyUI-Flux1-Kontext
+# ComfyUI-Flux1-Kontext 该节点用于调用flux官方Flux1-Kontext模型的API，还有Fal的的Kontext模型api
 1. 安装依赖包
 ```
 cd custom_nodes
